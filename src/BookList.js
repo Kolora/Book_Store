@@ -27,7 +27,7 @@ const BookList = ({ setCartItems, cartItems, books }) => {
             handleBtnClick={handleAddToCart}
             btnText={
               cartItems.filter((obj) => obj.id === book.id)?.length
-                ? "Already in Cart"
+                ? "Added to Cart"
                 : "Add to Cart"
             }
           />
