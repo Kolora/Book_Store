@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   button: {
-    // marginLeft: "auto",
-    // margin: "24px"
+    marginLeft: "auto",
+    margin: "24px"
   },
 }));
 

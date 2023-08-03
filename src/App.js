@@ -1,6 +1,5 @@
 import "./styles.css";
 import React, { useState } from "react";
-import BookList from "./BookList";
 import SearchBar from "./SearchBar";
 import Cart from "./Cart";
 

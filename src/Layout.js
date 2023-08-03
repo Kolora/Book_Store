@@ -57,6 +57,7 @@ const Layout = ({ children }) => {
       <div className="body-main">{children}</div>
     </div>
   );
+  n;
 };
 
 export default Layout;
