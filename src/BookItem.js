@@ -43,10 +43,7 @@ const BookItem = ({
 }) => {
   const classes = useStyles();
   const { volumeInfo, saleInfo } = book;
-  const randomPrices = [
-    17.2, 22.5, 65.1, 32.0, 45.1, 21.0, 23.1, 24.4, 26.2, 28.9, 30.1,
-  ];
-  console.log("price", volumeInfo?.saleInfo?.listPrice);
+  console.log("price", saleInfo.listPrice?.amount);
 
   return (
     <Card className={classes.card}>
@@ -81,6 +78,7 @@ const BookItem = ({
           color="primary"
           className={classes.button}
           onClick={() => handleBtnClick(book)}
+          // disableBtn={saleInfo.listPrice?.amount == undefined ? true : false}
         >
           {btnText}
         </Button>

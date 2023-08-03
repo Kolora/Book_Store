@@ -11,7 +11,8 @@ const BookList = ({ setCartItems, cartItems, books }) => {
 
   const handleAddToCart = (book) => {
     if (cartItems.filter((obj) => obj.id === book.id)?.length) {
-      return handleGoToCart();
+      // return handleGoToCart();
+      return;
     }
     setCartItems((prevCartItems) => [...prevCartItems, book]);
   };
@@ -26,7 +27,7 @@ const BookList = ({ setCartItems, cartItems, books }) => {
             handleBtnClick={handleAddToCart}
             btnText={
               cartItems.filter((obj) => obj.id === book.id)?.length
-                ? "Go to Cart"
+                ? "Already in Cart"
                 : "Add to Cart"
             }
           />

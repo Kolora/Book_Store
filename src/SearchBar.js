@@ -38,16 +38,15 @@ const SearchBar = ({
   };
 
   useEffect(() => {
-    list_of_search_terms[
-      Math.floor(Math.random() * list_of_search_terms.length)
-    ];
+    let current_search_term =
+      list_of_search_terms[
+        Math.floor(Math.random() * list_of_search_terms.length)
+      ];
     if (!searchTerm) {
       axios
         .get(
           `https://www.googleapis.com/books/v1/volumes?q=${encodeURI(
-            list_of_search_terms[
-              Math.floor(Math.random() * list_of_search_terms.length)
-            ]
+            current_search_term
           )}&key=AIzaSyAav2UZsFBJ_nkqmjbHLElNiheoOevoAd8`
         )
         .then((response) => {
