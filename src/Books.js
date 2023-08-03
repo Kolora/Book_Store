@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import BookList from "./BookList";
+import BookList from "./BookList.js";
 import { Typography } from "@mui/material";
-const Inventory = ({ setCartItems, cartItems }) => {
+const Books = ({ setCartItems, cartItems }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Inventory = ({ setCartItems, cartItems }) => {
         }}
       />
       <Typography variant="h4" sx={{ pb: 1, pt: 3 }}>
-        BookList
+        Discover your Books
       </Typography>
       <BookList
         setCartItems={setCartItems}

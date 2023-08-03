@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     borderBottom: `2px solid black`,
   },
+  flexGrow: {
+    flexGrow: 1,
+  },
 }));
 
 const Layout = ({ children }) => {
@@ -29,7 +32,10 @@ const Layout = ({ children }) => {
     <div>
       <AppBar position="sticky" className={classes.header}>
         <Toolbar>
-          <Typography variant="h6"></Typography>
+          <Typography variant="h2">Reader's Digest</Typography>
+          <Typography variant="h6" className={classes.flexGrow}>
+            {/* An empty Typography element with flexGrow will push the h2 element to the right */}
+          </Typography>
           <NavLink
             to="/"
             exact
@@ -58,4 +64,5 @@ const Layout = ({ children }) => {
     </div>
   );
 };
+
 export default Layout;

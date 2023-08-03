@@ -1,11 +1,11 @@
 import "./styles.css";
 import React, { useState } from "react";
-import SearchBar from "./SearchBar";
-import Cart from "./Cart";
+import SearchBar from "./SearchBar.js";
+import Cart from "./Cart.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
-import Books from "./Books";
+import Layout from "./Layout.js";
+import Books from "./Books.js";
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);

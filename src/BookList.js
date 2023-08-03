@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BookItem from "./BookItem";
+import BookItem from "./BookItem.js";
 import { useNavigate } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 const BookList = ({ setCartItems, cartItems, books }) => {

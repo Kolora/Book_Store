@@ -14,8 +14,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: theme.spacing(2),
-    width: 400, 
+    width: 400,
     height: 200,
+    margin: "16px",
   },
   cardMedia: {
     width: 150,
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginLeft: "auto",
-    margin: "24px"
+    margin: "24px",
   },
 }));
 
