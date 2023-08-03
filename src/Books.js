@@ -31,7 +31,7 @@ const Inventory = ({ setCartItems, cartItems }) => {
         }}
       />
       <Typography variant="h4" sx={{ pb: 1, pt: 3 }}>
-        Book List
+        BookList
       </Typography>
       <BookList
         setCartItems={setCartItems}
@@ -42,4 +42,4 @@ const Inventory = ({ setCartItems, cartItems }) => {
   );
 };
 
-export default Inventory;
+export default Books;

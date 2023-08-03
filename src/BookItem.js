@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     padding: theme.spacing(2),
-    width: 400, // Adjust this value to control the minimum width of each card,
+    width: 400, 
     height: 200,
   },
   cardMedia: {

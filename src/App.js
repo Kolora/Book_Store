@@ -6,7 +6,7 @@ import Cart from "./Cart";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Inventory from "./Inventory";
+import Books from "./Books";
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -20,7 +20,7 @@ const App = () => {
             path="/"
             element={
               <Layout>
-                <Inventory setCartItems={setCartItems} cartItems={cartItems} />
+                <Books setCartItems={setCartItems} cartItems={cartItems} />
               </Layout>
             }
           />

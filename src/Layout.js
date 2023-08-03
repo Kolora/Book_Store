@@ -4,22 +4,22 @@ import {
   Toolbar,
   Typography,
   Button,
-  makeStyles
+  makeStyles,
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    marginBottom: theme.spacing(3)
+    marginBottom: theme.spacing(3),
   },
   navLink: {
     color: "white",
     textDecoration: "none",
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   activeNavLink: {
     fontWeight: "bold",
-    borderBottom: `2px solid black`
-  }
+    borderBottom: `2px solid black`,
+  },
 }));
 
 const Layout = ({ children }) => {
