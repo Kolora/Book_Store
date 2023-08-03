@@ -14,7 +14,7 @@ To start the project, first, clone this repository:
 
 ```bash
 git clone <repository_url>
-cd book-store-app
+cd Book_Store
 npm install
 npm start
 ```
