@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
             className={classes.navLink}
             activeClassName={classes.activeNavLink}
           >
-            <Button color="inherit">Inventory</Button>
+            <Button color="inherit">Books</Button>
           </NavLink>
           <NavLink
             to="/search"
@@ -57,7 +57,5 @@ const Layout = ({ children }) => {
       <div className="body-main">{children}</div>
     </div>
   );
-  n;
 };
-
 export default Layout;
