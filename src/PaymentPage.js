@@ -42,16 +42,16 @@ const PaymentPage = () => {
     setTimeout(() => {
       setIsPaymentSuccess(true);
       // Redirect to home page or order confirmation page
-      navigate("/");
-    }, 2000);
+      // navigate("/");
+    }, 1000);
   };
 
-  // const handleAlertClose = (event, reason) => {
-  //   if (reason === "clickaway") {
-  //     return;
-  //   }
-  //   setIsPaymentSuccess(false);
-  // };
+  const handleAlertClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setIsPaymentSuccess(false);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -72,7 +72,7 @@ const PaymentPage = () => {
   return (
     <Grid container justify="center" className={classes.container}>
       <Grid item xs={12} sm={8} md={6} lg={4} className={classes.paymentForm}>
-        <h2>Checkout</h2>
+        <h2>Payment</h2>
         <form onSubmit={handleSubmit}>
           <TextField
             label="Card Number"
@@ -119,7 +119,7 @@ const PaymentPage = () => {
           </Grid>
         </form>
       </Grid>
-      {/* <Snackbar
+      <Snackbar
         open={isPaymentSuccess}
         autoHideDuration={3000}
         onClose={handleAlertClose}
@@ -127,7 +127,7 @@ const PaymentPage = () => {
         <Alert onClose={handleAlertClose} severity="success">
           Order successfully placed!
         </Alert>
-      </Snackbar> */}
+      </Snackbar>
     </Grid>
   );
 };
