@@ -7,7 +7,7 @@ import {
   Grid,
   TextField,
 } from "@material-ui/core";
-import { Alert } from "@material-ui/lab";
+import { Alert } from "@mui/lab";
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
