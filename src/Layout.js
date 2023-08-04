@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import {
   AppBar,
@@ -33,9 +34,7 @@ const Layout = ({ children }) => {
       <AppBar position="sticky" className={classes.header}>
         <Toolbar>
           <Typography variant="h2">Reader's Digest</Typography>
-          <Typography variant="h6" className={classes.flexGrow}>
-            {/* An empty Typography element with flexGrow will push the h2 element to the right */}
-          </Typography>
+          <Typography variant="h6" className={classes.flexGrow}></Typography>
           <NavLink
             to="/"
             exact
@@ -57,6 +56,21 @@ const Layout = ({ children }) => {
             activeClassName={classes.activeNavLink}
           >
             <Button color="inherit">Cart</Button>
+          </NavLink>
+          {/* Add checkout and payment links */}
+          <NavLink
+            to="/checkout"
+            className={classes.navLink}
+            activeClassName={classes.activeNavLink}
+          >
+            <Button color="inherit">Checkout</Button>
+          </NavLink>
+          <NavLink
+            to="/payment"
+            className={classes.navLink}
+            activeClassName={classes.activeNavLink}
+          >
+            <Button color="inherit">Payment</Button>
           </NavLink>
         </Toolbar>
       </AppBar>

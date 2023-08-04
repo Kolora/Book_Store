@@ -2,6 +2,8 @@ import "./styles.css";
 import React, { useState } from "react";
 import SearchBar from "./SearchBar.js";
 import Cart from "./Cart.js";
+import CheckoutPage from "./CheckoutPage.js";
+import PaymentPage from "./PaymentPage.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout.js";
@@ -41,6 +43,22 @@ const App = () => {
             element={
               <Layout>
                 <Cart cartItems={cartItems} setCartItems={setCartItems} />
+              </Layout>
+            }
+          />
+          <Route
+            path="/checkout"
+            element={
+              <Layout>
+                <CheckoutPage />
+              </Layout>
+            }
+          />
+          <Route
+            path="/payment"
+            element={
+              <Layout>
+                <PaymentPage />
               </Layout>
             }
           />
