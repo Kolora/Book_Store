@@ -4,7 +4,6 @@ import SearchBar from "./SearchBar.js";
 import Cart from "./Cart.js";
 import CheckoutPage from "./CheckoutPage.js";
 import PaymentPage from "./PaymentPage.js";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout.js";
 import Books from "./Books.js";
