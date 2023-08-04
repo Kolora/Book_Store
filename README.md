@@ -1,3 +1,6 @@
+# Deploy link 
+https://4xmf5m.csb.app/
+
 # Book Store Application
 
 Welcome to the Book Store Application! This is a React-based web application where users can view books, search for books, add books to the cart, and view the final price of the cart items.
@@ -36,6 +39,4 @@ cd Book_Store
 npm install
 npm start
 ```
-# BookStore_API
-# BookStore_API
-# BookStore_API
+
